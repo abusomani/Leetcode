@@ -1,3 +1,4 @@
+// Time complexity => O(sqrt(candies))
 class Solution
 {
 public:
