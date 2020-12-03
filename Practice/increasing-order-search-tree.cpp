@@ -51,7 +51,6 @@ public:
 class Solution1
 {
 private:
-    vector<TreeNode *> path;
     TreeNode *first = nullptr, *prev = nullptr;
 
 public:
