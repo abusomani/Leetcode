@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
     Find two elements sum equals target in unsorted array.
     Use unordered map for Linear time complexity.
@@ -14,13 +11,13 @@ public:
         vector<int> V;
         for (int i = 0; i < nums.size(); i++)
         {
-            if (Mp.find(target - nums[i]) != Mp.end())
+            if (Mp.count(target - nums[i]))
             {
-                V.push_back(min(i, Mp[target - nums[i]]));
-                V.push_back(max(i, Mp[target - nums[i]]));
+                V.push_back(Mp[target - nums[i]]);
+                V.push_back(i);
                 return V;
             }
-            Mp.insert(make_pair(nums[i], i));
+            Mp[nums[i]] = i;
         }
         return V;
     }
