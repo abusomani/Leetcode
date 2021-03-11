@@ -12,7 +12,7 @@ public:
                 continue;
             if (tmp != "..")
                 St.push_back(tmp);
-            else if (!stk.empty())
+            else if (!St.empty())
                 St.pop_back();
         }
 
