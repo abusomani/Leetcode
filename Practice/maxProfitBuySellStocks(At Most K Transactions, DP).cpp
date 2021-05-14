@@ -9,7 +9,9 @@ Now on day j, we have two options
 
 Do nothing (or buy) which doesn't change the acquired profit : dp[i][j] = dp[i][j-1]
 
-Sell the stock: In order to sell the stock, you must've bought it on a day t=[0..j-1]. Maximum profit that can be attained is t:0->j-1 max(prices[j]-prices[t]+dp[i-1][t-1]) where prices[j]-prices[t] is the profit from buying on day t and selling on day j. dp[i-1][t-1] is the maximum profit that can be made with at most i-1 transactions with prices prices[0..t-1].
+Sell the stock: In order to sell the stock, you must've bought it on a day t=[0..j-1]. 
+Maximum profit that can be attained is t:0->j-1 max(prices[j]-prices[t]+dp[i-1][t-1]) where prices[j]-prices[t] is the profit from buying on day t and 
+selling on day j. dp[i-1][t-1] is the maximum profit that can be made with at most i-1 transactions with prices prices[0..t-1].
 
 Time complexity of this approach is O(n^2k).
 
