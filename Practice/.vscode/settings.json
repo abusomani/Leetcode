@@ -19,6 +19,18 @@
         "ostream": "cpp",
         "initializer_list": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "exception": "cpp",
+        "filesystem": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "span": "cpp",
+        "ranges": "cpp"
     }
 }
