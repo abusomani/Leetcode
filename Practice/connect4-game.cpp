@@ -12,7 +12,6 @@ private:
     string name;
 public:
     string getName(){return name;}
-    void setName(string n){name = n;}
     Player(string n){
         name = n;
     }
@@ -29,8 +28,6 @@ public:
         B.resize(N, vector<int>(M, 0));
     }
     ~Board(){}
-    int getN(){return N;}
-    int getM(){return M;}
     vector<vector<int>> getBoard(){return B;}
     // returns the last row where the value was entered
     int addDot(int y, int val){
@@ -134,7 +131,6 @@ public:
     }
 
 };
-
 
 int main(){
     Connect4 game(7, 6, "Abhishek", "Somani");
